@@ -1,6 +1,6 @@
 # Domain 1 - Cluster Setup
 
-The code mentioned in this document are used in the Certified Kubernetes Security Specialist 2025 course.
+The code mentioned in this document are used in the Certified Kubernetes Security Specialist 2026 course.
 
 
 # Video-Document Mapper
