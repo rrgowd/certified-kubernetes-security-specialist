@@ -23,6 +23,7 @@ DNS.2 = kubernetes.default
 DNS.3 = kubernetes.default.svc
 DNS.4 = kubernetes.default.svc.cluster.local
 IP.1 = 127.0.0.1
+IP.2 = 192.168.60.129
 IP.3 = 10.0.0.1
 EOF
 ```
