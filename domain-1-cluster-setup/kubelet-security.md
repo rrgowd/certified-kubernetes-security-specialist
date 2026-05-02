@@ -4,7 +4,7 @@ cd /etc/kubernetes/pki
 ```
 Change the IP address in below command to that of Worker Node IP
 ```sh
-curl -k --cert apiserver-kubelet-client.crt --key apiserver-kubelet-client.key https://143.244.140.236:10250/pods
+curl -k --cert apiserver-kubelet-client.crt --key apiserver-kubelet-client.key https://localhost:10250/pods
 ```
 #### Step 2 Make a request to Kubelet API (Worker Node)
 ```sh
