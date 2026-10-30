@@ -8,7 +8,14 @@ openssl genrsa -out client.key 2048
 openssl req -new -key client.key -subj "/CN=client" -out client.csr
 openssl x509 -req -in client.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out client.crt -extensions v3_req  -days 2000
 ```
-
+openssl x509 -req \
+  -in client.csr \
+  -CA ca.crt \
+  -CAkey ca.key \
+  -CAcreateserial \
+  -out client.crt \
+  -days 1000 \
+  -sha256
 #### Step 2 - Start Etcd Server (Tab 1):
 ```sh
 cd /root/certificates
