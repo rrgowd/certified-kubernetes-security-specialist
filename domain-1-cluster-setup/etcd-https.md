@@ -48,6 +48,10 @@ IP.1 = 192.168.22.129
 IP.2 = 127.0.0.1
 EOF
 ```
+
+
+openssl x509 -req -in etcd.csr -CA ca.crt -CAkey ca.key -CAcreateserial  -out etcd.crt -extensions v3_req -extfile etcd.cnf -days 2000
+
 #### Step 4 - Creating CSR:
 ```sh
 openssl req -new -key etcd.key -subj "/CN=etcd" -out etcd.csr -config etcd.cnf
